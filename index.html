@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casera | Promociones</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #7a0000, #b22222, #d64545);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px;
+            color:white;
+        }
+
+        .contenedor{
+            width:100%;
+            max-width:1000px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 10px 35px rgba(0,0,0,0.4);
+        }
+
+        .header{
+            background: rgba(0,0,0,0.25);
+            padding:30px;
+            text-align:center;
+        }
+
+        .header h1{
+            font-size:4rem;
+            letter-spacing:3px;
+            margin-bottom:10px;
+            text-transform:uppercase;
+        }
+
+        .header p{
+            font-size:1.2rem;
+            opacity:0.9;
+        }
+
+        .hero{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:space-between;
+            padding:40px;
+            gap:30px;
+        }
+
+        .info{
+            flex:1;
+            min-width:300px;
+        }
+
+        .info h2{
+            font-size:2.5rem;
+            margin-bottom:20px;
+            color:#ffe08a;
+        }
+
+        .promo{
+            background:white;
+            color:#7a0000;
+            padding:25px;
+            border-radius:20px;
+            margin-bottom:25px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .promo h3{
+            font-size:1.8rem;
+            margin-bottom:15px;
+        }
+
+        .precio{
+            font-size:2.5rem;
+            font-weight:bold;
+            margin-top:10px;
+        }
+
+        .detalle{
+            line-height:1.8;
+            font-size:1.1rem;
+        }
+
+        .imagen{
+            flex:1;
+            min-width:280px;
+            display:flex;
+            justify-content:center;
+        }
+
+        .imagen img{
+            width:100%;
+            max-width:420px;
+            border-radius:25px;
+            border:5px solid white;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+            transition:0.4s;
+        }
+
+        .imagen img:hover{
+            transform:scale(1.03);
+        }
+
+        .footer{
+            background: rgba(0,0,0,0.3);
+            padding:25px;
+            text-align:center;
+        }
+
+        .footer h3{
+            margin-bottom:10px;
+            font-size:1.4rem;
+        }
+
+        .deploy{
+            margin-top:15px;
+            display:inline-block;
+            background:#ffe08a;
+            color:#7a0000;
+            padding:12px 25px;
+            border-radius:50px;
+            font-weight:bold;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media(max-width:768px){
+
+            .header h1{
+                font-size:2.8rem;
+            }
+
+            .info h2{
+                font-size:2rem;
+            }
+
+            .precio{
+                font-size:2rem;
+            }
+
+            .hero{
+                padding:25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="header">
+            <h1>La Casera</h1>
+            <p>La mejor carne fresca y promociones especiales para tu familia</p>
+        </div>
+
+        <div class="hero">
+
+            <div class="info">
+
+                <h2>🔥 Promoción del Día 🔥</h2>
+
+                <div class="promo">
+                    <h3>Costilla Premium de Res</h3>
+
+                    <p>
+                        Aprovecha nuestra oferta especial por tiempo limitado.
+                        Carne fresca, seleccionada y de excelente calidad.
+                    </p>
+
+                    <div class="precio">
+                        45 Bs. el kilo
+                    </div>
+                </div>
+
+                <div class="detalle">
+                    <p>
+                        En <strong>La Casera</strong> trabajamos cada día para brindar
+                        productos frescos, atención rápida y promociones exclusivas.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Visítanos y descubre cortes premium ideales para parrillas,
+                        almuerzos familiares y reuniones especiales.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="imagen">
+                <img 
+                    src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=1200&auto=format&fit=crop"
+                    alt="Promoción de carne"
+                >
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <h3>Estudiante: Sergio Arias</h3>
+
+            <p>
+                Proyecto de automatización CI/CD con GitHub Actions y despliegue en AWS S3.
+            </p>
+
+            <div class="deploy">
+                Deploy automatizado con GitHub Actions
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
